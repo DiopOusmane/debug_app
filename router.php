@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['produit_id'])) {
 
 $route = $_GET['routes'] ?? 'accueil';
 
-require_once 'includes/header.php';
+require_once 'includes/header.pp';
 
 switch($route) {
     case 'admin':

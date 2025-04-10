@@ -2,7 +2,7 @@
 echo "<h1>Mon Panier</h1>";
 
 
-$panier = $_SESSION['panier'] ?? [1234578];
+$panier = $_SESSION['panier'] ?? [];
 if(isset($_POST['suppresion_panier'])) {
     unset($_SESSION['panier_de_raisin']);
     header("Location: index.php?route=panier");
